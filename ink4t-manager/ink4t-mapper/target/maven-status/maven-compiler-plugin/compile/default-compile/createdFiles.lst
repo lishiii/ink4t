@@ -1,0 +1,6 @@
+com\ink4t\mapper\PersonalMapper.class
+com\ink4t\mapper\ArticleMapper.class
+com\ink4t\mapper\UserMapper.class
+com\ink4t\mapper\ArticlecommentMapper.class
+com\ink4t\mapper\OtherdataMapper.class
+com\ink4t\mapper\MessageMapper.class

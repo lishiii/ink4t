@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ink4t-controller">
+        <property name="context-root" value="/ink4t-controller"/>
+        <property name="java-output-path" value="/ink4t-controller/src/main/webapp/WEB-INF/classes"/>
+    </wb-module>
+</project-modules>

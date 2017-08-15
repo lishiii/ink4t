@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cache:CacheIndex xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:cache="http://eclipse.org/dltk/cache_model" environment="org.eclipse.dltk.core.environment.localEnvironment">
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/WEB-INF/js/blog.js" timestamp="1502725865336" lastAccessTime="1502725867362"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/WEB-INF/js/bootstrap.js" timestamp="1502725865339" lastAccessTime="1502725867475"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/WEB-INF/js/jquery.goup.min.js" timestamp="1502725865341" lastAccessTime="1502725867636"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/WEB-INF/js/jquery.min.js" timestamp="1502725865343" lastAccessTime="1502725867802"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/WEB-INF/js/manhuaHtmlArea.1.0.js" timestamp="1502725865345" lastAccessTime="1502725867941"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/WEB-INF/js/message.js" timestamp="1502725865348" lastAccessTime="1502728845081"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/WEB-INF/js/my.js" timestamp="1502725865350" lastAccessTime="1502725868145"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/WEB-INF/js/scrollspy.js" timestamp="1502725865352" lastAccessTime="1502725868247"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/js/blog.js" timestamp="1502725865336" lastAccessTime="1502780384776"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/js/bootstrap.js" timestamp="1502725865339" lastAccessTime="1502780384952"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/js/jquery.goup.min.js" timestamp="1502725865341" lastAccessTime="1502780385113"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/js/jquery.min.js" timestamp="1502725865343" lastAccessTime="1502780385261"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/js/manhuaHtmlArea.1.0.js" timestamp="1502725865345" lastAccessTime="1502780385411"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/js/message.js" timestamp="1502725865348" lastAccessTime="1502805520753"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/js/my.js" timestamp="1502725865350" lastAccessTime="1502780385616"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/src/main/webapp/js/scrollspy.js" timestamp="1502725865352" lastAccessTime="1502780385719"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/target/ink4t-manager-controller/js/blog.js" timestamp="1502725865336" lastAccessTime="1502806130451"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/target/ink4t-manager-controller/js/bootstrap.js" timestamp="1502725865339" lastAccessTime="1502806130574"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/target/ink4t-manager-controller/js/jquery.goup.min.js" timestamp="1502725865341" lastAccessTime="1502806130705"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/target/ink4t-manager-controller/js/jquery.min.js" timestamp="1502725865343" lastAccessTime="1502806130846"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/target/ink4t-manager-controller/js/manhuaHtmlArea.1.0.js" timestamp="1502725865345" lastAccessTime="1502806130986"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/target/ink4t-manager-controller/js/message.js" timestamp="1502725865348" lastAccessTime="1502806131111"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/target/ink4t-manager-controller/js/my.js" timestamp="1502725865350" lastAccessTime="1502806131237"/>
+  <entries path="D:/Blog/ink4t-manager/ink4t-controller/target/ink4t-manager-controller/js/scrollspy.js" timestamp="1502725865352" lastAccessTime="1502806131362"/>
+</cache:CacheIndex>

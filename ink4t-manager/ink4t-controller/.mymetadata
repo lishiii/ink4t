@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ink4t-controller"
+  id="myeclipse.1502719465986"
+  context-root="/ink4t-controller"
+  j2ee-spec="1.7"
+  archive="ink4t-controller.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+
