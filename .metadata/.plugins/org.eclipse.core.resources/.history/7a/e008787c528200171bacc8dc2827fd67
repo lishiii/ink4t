@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ink4t.mapper.ArticlecommentMapper" >
+  <resultMap id="BaseResultMap" type="com.ink4t.pojo.Articlecomment" >
+    <id column="acid" property="acid" jdbcType="INTEGER" />
+    <result column="acaid" property="acaid" jdbcType="INTEGER" />
+    <result column="a_id" property="aId" jdbcType="INTEGER" />
+    <result column="acname" property="acname" jdbcType="VARCHAR" />
+    <result column="acemail" property="acemail" jdbcType="VARCHAR" />
+    <result column="accontext" property="accontext" jdbcType="VARCHAR" />
+    <result column="acdate" property="acdate" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    acid, acaid, a_id, acname, acemail, accontext, acdate
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.ink4t.pojo.ArticlecommentExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from articlecomment
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from articlecomment
+    where acid = #{acid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from articlecomment
+    where acid = #{acid,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.ink4t.pojo.ArticlecommentExample" >
+    delete from articlecomment
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.ink4t.pojo.Articlecomment" >
+    insert into articlecomment (acid, acaid, a_id, 
+      acname, acemail, accontext, 
+      acdate)
+    values (#{acid,jdbcType=INTEGER}, #{acaid,jdbcType=INTEGER}, #{aId,jdbcType=INTEGER}, 
+      #{acname,jdbcType=VARCHAR}, #{acemail,jdbcType=VARCHAR}, #{accontext,jdbcType=VARCHAR}, 
+      #{acdate,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.ink4t.pojo.Articlecomment" >
+    insert into articlecomment
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="acid != null" >
+        acid,
+      </if>
+      <if test="acaid != null" >
+        acaid,
+      </if>
+      <if test="aId != null" >
+        a_id,
+      </if>
+      <if test="acname != null" >
+        acname,
+      </if>
+      <if test="acemail != null" >
+        acemail,
+      </if>
+      <if test="accontext != null" >
+        accontext,
+      </if>
+      <if test="acdate != null" >
+        acdate,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="acid != null" >
+        #{acid,jdbcType=INTEGER},
+      </if>
+      <if test="acaid != null" >
+        #{acaid,jdbcType=INTEGER},
+      </if>
+      <if test="aId != null" >
+        #{aId,jdbcType=INTEGER},
+      </if>
+      <if test="acname != null" >
+        #{acname,jdbcType=VARCHAR},
+      </if>
+      <if test="acemail != null" >
+        #{acemail,jdbcType=VARCHAR},
+      </if>
+      <if test="accontext != null" >
+        #{accontext,jdbcType=VARCHAR},
+      </if>
+      <if test="acdate != null" >
+        #{acdate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.ink4t.pojo.ArticlecommentExample" resultType="java.lang.Integer" >
+    select count(*) from articlecomment
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update articlecomment
+    <set >
+      <if test="record.acid != null" >
+        acid = #{record.acid,jdbcType=INTEGER},
+      </if>
+      <if test="record.acaid != null" >
+        acaid = #{record.acaid,jdbcType=INTEGER},
+      </if>
+      <if test="record.aId != null" >
+        a_id = #{record.aId,jdbcType=INTEGER},
+      </if>
+      <if test="record.acname != null" >
+        acname = #{record.acname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.acemail != null" >
+        acemail = #{record.acemail,jdbcType=VARCHAR},
+      </if>
+      <if test="record.accontext != null" >
+        accontext = #{record.accontext,jdbcType=VARCHAR},
+      </if>
+      <if test="record.acdate != null" >
+        acdate = #{record.acdate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update articlecomment
+    set acid = #{record.acid,jdbcType=INTEGER},
+      acaid = #{record.acaid,jdbcType=INTEGER},
+      a_id = #{record.aId,jdbcType=INTEGER},
+      acname = #{record.acname,jdbcType=VARCHAR},
+      acemail = #{record.acemail,jdbcType=VARCHAR},
+      accontext = #{record.accontext,jdbcType=VARCHAR},
+      acdate = #{record.acdate,jdbcType=TIMESTAMP}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ink4t.pojo.Articlecomment" >
+    update articlecomment
+    <set >
+      <if test="acaid != null" >
+        acaid = #{acaid,jdbcType=INTEGER},
+      </if>
+      <if test="aId != null" >
+        a_id = #{aId,jdbcType=INTEGER},
+      </if>
+      <if test="acname != null" >
+        acname = #{acname,jdbcType=VARCHAR},
+      </if>
+      <if test="acemail != null" >
+        acemail = #{acemail,jdbcType=VARCHAR},
+      </if>
+      <if test="accontext != null" >
+        accontext = #{accontext,jdbcType=VARCHAR},
+      </if>
+      <if test="acdate != null" >
+        acdate = #{acdate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where acid = #{acid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ink4t.pojo.Articlecomment" >
+    update articlecomment
+    set acaid = #{acaid,jdbcType=INTEGER},
+      a_id = #{aId,jdbcType=INTEGER},
+      acname = #{acname,jdbcType=VARCHAR},
+      acemail = #{acemail,jdbcType=VARCHAR},
+      accontext = #{accontext,jdbcType=VARCHAR},
+      acdate = #{acdate,jdbcType=TIMESTAMP}
+    where acid = #{acid,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,5 @@
+package com.ink4t.service;
+
+public interface ChooseService {
+
+}

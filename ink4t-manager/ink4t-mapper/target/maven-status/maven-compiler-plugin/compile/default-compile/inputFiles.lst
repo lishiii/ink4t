@@ -1,6 +1,6 @@
-D:\Blog\ink4t-manager\ink4t-mapper\src\main\java\com\ink4t\mapper\PersonalMapper.java
-D:\Blog\ink4t-manager\ink4t-mapper\src\main\java\com\ink4t\mapper\MessageMapper.java
-D:\Blog\ink4t-manager\ink4t-mapper\src\main\java\com\ink4t\mapper\UserMapper.java
-D:\Blog\ink4t-manager\ink4t-mapper\src\main\java\com\ink4t\mapper\ArticleMapper.java
-D:\Blog\ink4t-manager\ink4t-mapper\src\main\java\com\ink4t\mapper\ArticlecommentMapper.java
-D:\Blog\ink4t-manager\ink4t-mapper\src\main\java\com\ink4t\mapper\OtherdataMapper.java
+D:\Blog\ink4t-manager\ink4t-mapper\src\main\java\com\ink4t\mapper\TbMessageMapper.java
+D:\Blog\ink4t-manager\ink4t-mapper\src\main\java\com\ink4t\mapper\TbPersonalMapper.java
+D:\Blog\ink4t-manager\ink4t-mapper\src\main\java\com\ink4t\mapper\TbArticlecommentMapper.java
+D:\Blog\ink4t-manager\ink4t-mapper\src\main\java\com\ink4t\mapper\TbUserMapper.java
+D:\Blog\ink4t-manager\ink4t-mapper\src\main\java\com\ink4t\mapper\TbArticleMapper.java
+D:\Blog\ink4t-manager\ink4t-mapper\src\main\java\com\ink4t\mapper\TbOtherdataMapper.java

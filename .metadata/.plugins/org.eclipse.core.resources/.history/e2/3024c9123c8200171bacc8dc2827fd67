@@ -1,0 +1,34 @@
+package com.ink4t.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ink4t.mapper.OtherdataMapper;
+import com.ink4t.pojo.Otherdata;
+import com.ink4t.pojo.OtherdataExample;
+import com.ink4t.pojo.OtherdataExample.Criteria;
+import com.ink4t.service.ChooseService;
+
+@Service
+public class ChooseServiceImpl implements ChooseService {
+
+	@Autowired
+	private OtherdataMapper otherdataMapper;
+
+	@Override
+	public Otherdata getData() {
+		OtherdataExample otherdataExample = new OtherdataExample();
+		Criteria criteria = otherdataExample.createCriteria();
+		criteria.andOidEqualTo(1);
+		List<Otherdata> list = otherdataMapper
+				.selectByExample(otherdataExample);
+		Otherdata otherdata = list.get(0);
+		System.out.println("===============PageController===================");
+		System.out.println(otherdata.getLike());
+		System.out.println("===============PageController===================");
+		return otherdata;
+	}
+
+}

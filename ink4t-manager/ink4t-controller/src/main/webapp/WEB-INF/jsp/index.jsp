@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" isELIgnored="false"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,8 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/my.css">
 	<title>index</title>
-	<script type="text/javascript" src="js/scrollspy.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/scrollspy.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/jquery.goup.min.js"></script>
 	<script type="text/javascript" src="js/my.js"></script>
@@ -126,14 +127,14 @@
 								<h3>ink4t</h3>
 								<p>喜欢就点击，不喜欢也可以点击！点击无上限。</p>
 								<div class="progress">
-									<div class="progress-bar progress-bar-success progress-bar-striped" style="width: 65%" id="pro-like">
-										65
-										<!-- <span class="sr-only" id="sr-like">65% Complete (success)</span> -->
+									<div class="progress-bar progress-bar-success progress-bar-striped" style="width: ${data.likePro }%" id="pro-like">
+										${data.olike }
+										<span class="sr-only" id="sr-like">${data.likePro }% Complete (success)</span>
 										
 									</div>
-									<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 35%" id="pro-unlike">
-										35
-										<!-- <span class="sr-only" id="sr-unlike">35% Complete (warning)</span> -->
+									<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: ${data.unlikePro }%" id="pro-unlike">
+										${data.ounlike }
+										<span class="sr-only" id="sr-unlike">${data.unlikePro }% Complete (warning)</span>
 										
 									</div>
 								</div>

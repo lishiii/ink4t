@@ -1,0 +1,23 @@
+package com.ink4t.pojo;
+
+public class ChooseDataAll extends Otherdata {
+	private int likePro;
+	private int unlikePro;
+
+	public int getLikePro() {
+		return likePro;
+	}
+
+	public void setLikePro(int likePro) {
+		this.likePro = likePro;
+	}
+
+	public int getUnlikePro() {
+		return unlikePro;
+	}
+
+	public void setUnlikePro(int unlikePro) {
+		this.unlikePro = unlikePro;
+	}
+
+}

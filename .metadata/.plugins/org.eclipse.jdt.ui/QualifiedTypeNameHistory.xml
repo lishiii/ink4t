@@ -2,4 +2,18 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="com.ink4t.mapper.OtherdataMapper"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.ink4t.service.ChooseService"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="com.ink4t.pojo.OtherdataExample"/>
+<fullyQualifiedTypeName name="com.ink4t.pojo.OtherdataExample.Criteria"/>
+<fullyQualifiedTypeName name="com.ink4t.pojo.Otherdata"/>
+<fullyQualifiedTypeName name="com.ink4t.pojo.ChooseDataAll"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.ink4t.pojo.TbOtherdata"/>
+<fullyQualifiedTypeName name="com.ink4t.mapper.TbOtherdataMapper"/>
 </qualifiedTypeNameHistroy>

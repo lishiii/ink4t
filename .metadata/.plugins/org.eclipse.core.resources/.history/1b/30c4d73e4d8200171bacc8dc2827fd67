@@ -1,0 +1,30 @@
+package com.ink4t.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ink4t.mapper.OtherdataMapper;
+import com.ink4t.pojo.ChooseDataAll;
+import com.ink4t.pojo.Otherdata;
+import com.ink4t.service.ChooseService;
+
+@Service
+public class ChooseServiceImpl implements ChooseService {
+
+	@Autowired
+	private OtherdataMapper otherdataMapper;
+
+	@Override
+	public ChooseDataAll getData() {
+		Otherdata otherdata = otherdataMapper.selectByPrimaryKey(1);
+		int like = otherdata.getLike();
+		int unlike = otherdata.getUnlike();
+		int total = like + unlike;
+		float likePro = Math.round(like / total * 10000) / 100.00;
+		ChooseDataAll chooseDataAll = new ChooseDataAll();
+		chooseDataAll.setLike(like);
+		chooseDataAll.setUnlike(unlike);
+		return chooseDataAll;
+	}
+
+}

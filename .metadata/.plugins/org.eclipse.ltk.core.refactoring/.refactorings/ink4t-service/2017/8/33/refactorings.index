@@ -1,0 +1,6 @@
+1502856651934	Extract local variable 'criteria'
+1502856689407	Extract local variable 'andOidEqualTo'
+1502856763252	Extract local variable 'example'
+1502856960942	Extract local variable 'otherdata'
+1502860753200	Extract local variable 'selectByPrimaryKey'
+1502861520906	Extract local variable 'selectByExample'
